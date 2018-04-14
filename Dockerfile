@@ -1,5 +1,5 @@
 # Specify which upstream EDK2 branch to use
-ARG BRANCH=udk2017
+ARG BRANCH=udk2018
 
 # Derive our OVMF build environment from the EDK2 build environment
 FROM scjalliance/edk2:${BRANCH}
