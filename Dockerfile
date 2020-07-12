@@ -1,12 +1,12 @@
-# Specify which upstream EDK2 branch to use
-ARG BRANCH=udk2018
+# Specify which upstream EDK2 tag to use
+ARG TAG=stable202002
 
 # Derive our OVMF build environment from the EDK2 build environment
-FROM scjalliance/edk2:${BRANCH}
+FROM scjalliance/edk2:${TAG}
 
 # Specify some labels
 LABEL maintainer="Joshua Sjoding <joshua.sjoding@scjalliance.com>" \
-      description="Build environment for Open Virtual Machine Firmware. Follows the TianoCore EDK II ${BRANCH} branch."
+      description="Build environment for Open Virtual Machine Firmware. Based on the TianoCore edk2-${TAG} tag."
 
 # Configure EDK2 to build OVMF
 ARG TARGET=RELEASE
