@@ -4,6 +4,9 @@ ARG TAG=stable202408
 # Derive our OVMF build environment from the EDK2 build environment
 FROM scjalliance/edk2:${TAG}
 
+# Bring arguments into the image
+ARG TAG
+
 # Specify some labels
 LABEL maintainer="Joshua Sjoding <joshua.sjoding@scjalliance.com>" \
       description="Build environment for Open Virtual Machine Firmware. Based on the TianoCore edk2-${TAG} tag."
