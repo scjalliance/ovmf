@@ -1,5 +1,5 @@
 # Specify which upstream EDK2 tag to use
-ARG TAG=stable202511
+ARG TAG=stable202602
 
 # Derive our OVMF build environment from the EDK2 build environment
 FROM scjalliance/edk2:${TAG}
